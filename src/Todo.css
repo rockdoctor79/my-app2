@@ -1,0 +1,126 @@
+body{
+  font-family: "Arial";
+  background-color: #A6DCFB;
+}
+
+/* this covers the add new task bar as well as the cells */
+#todos {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  border: 1px dotted;
+  border-color: ;
+  padding: 20px;
+  background-color: #D7E2EF;
+}
+/* this is for autolayout adjustment */
+@media (max-width: 800px){
+  #todos{
+    width:80%;
+  }
+}
+/* this focuses on the add new todo bar */
+#todos #newtodo #newTitle {
+
+  width: 80%;
+  font-size: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: #D7E2EF;
+}
+/* when bar is in focus */
+#todos #newtodo #newTitle:focus {
+  outline: none;
+}
+/* this focuses on submission button */
+#todos #newtodo #subbut{
+
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  width: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  float: right;
+  position: relative;
+  top: 5px;
+  background-color: black;
+
+}
+/* when button is hovered over */
+#todos #newtodo #subbut:hover {
+  background-color: black;
+  opacity: .5;
+}
+/* when button has been clicked */
+#todos #newtodo #subbut:active {
+  background-color: black;
+}
+/* this focuses on all the new cells and the bar */
+#todos .todo{
+  font-size: 30px;
+  padding: 30px 0px;
+  border-bottom: 1px black;
+}
+/* adds border to last cell */
+#todos .todo:last-of-type{
+  border-bottom: none;
+}
+/* for text in the cells */
+#todos .todo p{
+  display: inline-block;
+  margin: 0px;
+  max-width: 80%;
+}
+/* this covers the button */
+#todos .todo button{
+  background: none;
+  position: relative;
+  bottom: -2px;
+}
+/* this covers the check button  */
+#todos .todo .check{
+  float: left;
+  background-color: white;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+/* if check button is hovered over */
+#todos .todo .check:hover{
+  opacity: .5;
+}
+/* when hover button is clicked */
+#todos .todo .check:active {
+  background-color: blue;
+}
+
+/* color of button after being clicked  */
+#todos .todo.completed .check{
+background-color: #36FE1D;
+}
+/* new color of text after checks been clicked */
+#todos .todo.completed p{
+  color: green;
+  text-decoration: line-through;
+}
+/* delete button */
+#todos .todo .delete{
+  float: right;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+}
+/* delete when hovered */
+#todos .todo .delete:hover{
+  opacity: .5;
+
+
+}
